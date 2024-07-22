@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de contatos</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link para o arquivo de estilo CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Otimiza a conexão com o servidor de fontes do Google -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Otimiza a conexão com o servidor de fontes do Google com CORS habilitado -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> <!-- Importa a fonte Roboto do Google Fonts -->
+    
+</head>
+<body>
+    <div class="container"> 
+        <h1>Cadastro de contatos</h1>
+        <form id="contact-form">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br>
+            <label for="numero" >Telefone:</label>
+            <input type="telefone" id="numero" name="numero" required><br>
+            <button type="submit">Cadastrar</button>
+        </form>
+        <div id="error-message" class="error"></div>
+     </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Telefone</th>
+                </tr>
+            </thead>
+            <tbody id="contato-da-tabela">
+
+            </tbody>
+        </table>
+    <script src="script.js"></script>
+</body>
+</html>
